@@ -2,7 +2,6 @@
 var express = require('express');
 var app = express();
 
-
 // create router object
 var router = express.Router();
 

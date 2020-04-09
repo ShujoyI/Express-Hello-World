@@ -1,6 +1,7 @@
 // import the Express module
 var express = require('express');
 var app = express();
+var logger = require('morgan');
 
 // create router object
 var router = express.Router();

@@ -3,6 +3,8 @@ var express = require('express');
 var app = express();
 var logger = require('morgan');
 
+app.use(logger('dev'));
+
 // create router object
 var router = express.Router();
 

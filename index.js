@@ -29,3 +29,8 @@ app.get('/', function(req, res) {
 app.listen(3000, function() {
     console.log('Example app listening on port 3000!');
 });
+
+app.use(function(err, req, req, next) {
+    console.error(err.stack);
+    res.status(500).send('Something broke!');
+});
